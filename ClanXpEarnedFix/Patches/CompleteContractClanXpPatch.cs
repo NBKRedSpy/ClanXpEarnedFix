@@ -18,9 +18,16 @@ namespace ClanXpEarnedFix.Patches
     public static class CompleteContractClanXpPatch
 	{
 
+
         private static PropertyInfo ExperienceEarnedInfo { get; set; }
 
-        static CompleteContractClanXpPatch()
+		public static bool Prepare()
+		{
+			return Core.ModSettings.ChangeXp;
+		}
+
+
+		static CompleteContractClanXpPatch()
         {
 			ExperienceEarnedInfo = Harmony.AccessTools.Property(typeof(Contract), nameof(Contract.ExperienceEarned));
 		}

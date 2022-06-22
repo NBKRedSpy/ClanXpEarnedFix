@@ -10,6 +10,9 @@
   "DLL": "ClanXpEarnedFix.dll",
 
   "Settings": {
+    "Debug":  false,
+    "ChangePayout": true,
+    "ChangeXp": true,
   }
 
 }
