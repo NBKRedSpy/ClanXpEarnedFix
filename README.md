@@ -10,7 +10,7 @@ This mod will give the equivalent of a five skull difficulty for all successfull
 XP from non clan missions are not affected.
 
 # Compatibility
-Save to add and remove from existing saves.
+Safe to add and remove from existing saves.
 
 May conflict with mods which modify the XP gained from a contract.
 
