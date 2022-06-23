@@ -36,6 +36,7 @@ namespace ClanXpEarnedFix.Patches
         {
             try
             {
+				if (Core.ModSettings.Debug) Logger.Log("CompleteContract start");
 
 				if (Core.ModSettings.Debug) Logger.LogJson(new
 				{
@@ -98,7 +99,9 @@ namespace ClanXpEarnedFix.Patches
 				if (Core.ModSettings.Debug) Logger.LogJson(new {
 					experienceEarned
 				});
-				
+
+				if (Core.ModSettings.Debug) Logger.Log("CompleteContract end");
+
 			}
             catch (Exception ex)
             {

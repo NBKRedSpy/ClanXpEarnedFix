@@ -15,10 +15,12 @@ namespace ClanXpEarnedFix.Patches
     [HarmonyPatch(typeof(SimGameState), nameof(SimGameState.PrepContract))]
     public static class PrepContractGetContract
     {
-        public static bool Prepare()
-        {
-            return Core.ModSettings.ChangePayout;
-        }
+        //public static bool Prepare()
+        //{
+
+        //    if (Core.ModSettings.Debug) Logger.Log("PrepContractGetContract prepare");
+        //    return Core.ModSettings.ChangePayout;
+        //}
 
         /// <summary>
         /// the contract that was las
@@ -27,7 +29,10 @@ namespace ClanXpEarnedFix.Patches
 
         public static void Prefix(Contract contract)
         {
+
+            if (Core.ModSettings.Debug) Logger.Log("PrepContractGetContract start");
             Contract = contract;
+            if (Core.ModSettings.Debug) Logger.Log("PrepContractGetContract end");
         }
     }
 }
