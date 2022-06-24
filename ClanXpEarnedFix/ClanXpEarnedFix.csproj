@@ -87,6 +87,7 @@
     <Compile Include="Init.cs" />
     <Compile Include="Patches\ContractRewardPatch.cs" />
     <Compile Include="Patches\PrepContractGetContract.cs" />
+    <Compile Include="Patches\TestPatch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
